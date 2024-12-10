@@ -1,0 +1,153 @@
+
+body{
+    padding: 0 8%;
+}
+
+.fade1,
+.fade2,
+.fade3,
+.fade4 {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: #39ff14;
+  top: -100px;
+  left: -20px;
+  transform: translate(-50% , -50%);
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: -100;
+}
+
+.fade2 {
+  top: 100px;
+  left: 825px;
+  height: 200px;
+  width: 200px;
+}
+.fade3 {
+  top: 550px;
+  left: 30px;
+  height: 100px;
+  width: 100px;
+  background: #39ff14;
+  filter: blur(80px);
+}
+
+.fade4 {
+  top: 600px;
+  left: 925px;
+  height: 200px;
+  width: 200px;
+  background: #39ff14;
+  filter: blur(90px);
+  opacity: 0.3;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header{
+    padding-top: 20px;
+}
+
+header .return-btn{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background: #32cd32;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+header .return-btn:hover{
+    background: #39ff14;
+}
+
+.return-btn i {
+    font-size: 22px;
+}
+
+.main-content {
+    padding: 2rem 0;
+}
+
+.training-section {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.training-section h2 {
+    font-size: 1.75rem;
+    color: #39ff14;
+    margin-bottom: 1rem;
+}
+
+.section-description {
+    font-size: 1rem;
+    color: #808080;
+    margin-bottom: 2rem;
+}
+
+.training-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.training-card {
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    background: #111;
+    padding-left: 10px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.training-card:hover{
+    box-shadow: 0 0 10px  rgba(255, 255, 255, 0.1);
+    transform: translateY(-3px);
+}
+
+.training-card img{
+    width: 60px;
+    margin-right: 40px;
+    border-radius: 10px;
+}
+
+.training-card .title{
+    font-size: 12px
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .training-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}

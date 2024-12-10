@@ -1,0 +1,345 @@
+
+
+body {
+    padding: 0 8%;
+}
+
+.fade1,
+.fade2,
+.fade3,
+.fade4 {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: #39ff14;
+  top: -100px;
+  left: -20px;
+  transform: translate(-50% , -50%);
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: -100;
+}
+
+.fade2 {
+  top: 100px;
+  left: 825px;
+  height: 200px;
+  width: 200px;
+}
+.fade3 {
+  top: 550px;
+  left: 30px;
+  height: 100px;
+  width: 100px;
+  background: #39ff14;
+  filter: blur(80px);
+}
+
+.fade4 {
+  top: 600px;
+  left: 925px;
+  height: 200px;
+  width: 200px;
+  background: #39ff14;
+  filter: blur(90px);
+  opacity: 0.3;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    color: #000;
+    padding: 5px;
+    margin-bottom: 50px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+.logout-confirmation {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: #111;
+    z-index: 9999;
+    border: 3px solid #ffffffbf;
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgba(45, 45, 45, 0.528);
+  }
+  
+
+
+
+.logout-confirmation h3{
+    color: #fff;
+}
+
+.logout-confirmation .btns{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.btns a {
+    display: flex;
+    align-items: center;
+    background: #2229;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btns a:hover{
+    background: #222;
+}
+
+.btns .logout-confirm{
+    background: #ff0000be;
+    margin-left: 10px;
+}
+
+.btns .logout-confirm:hover{
+    background: #ff0000;
+}
+
+.btns .logout-confirm i {
+    margin-right: 5px;
+}
+
+
+.logo img{
+    width: 62px;
+    cursor: pointer;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition:  0.2s;
+}
+
+.nav-link:hover {
+    color: #f74a55;
+}
+
+.nav-link i{
+    font-size: 22px;
+}
+
+
+
+
+.welcome-message {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #fff;
+}
+
+
+.welcome-message p {
+    color: #808080;
+}
+
+.quick-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.quick-actions a {
+    width: 100%; 
+    max-width: 300px; 
+    text-align: center; 
+}
+
+
+.action-button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+.action-button:hover {
+    transform: translateY(-2px);
+}
+
+.action-button.secondary {
+    background: transparent;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: .3s;
+}
+
+.action-button:hover.secondary{
+    border: 2px solid white;
+}
+
+.action-button i {
+    font-size: 32px;
+}
+
+.subscription-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+}
+
+.subscription-card h3 {
+    color: #39ff14;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.subscription-card .subscribe{
+    text-transform: capitalize;
+    color: #39ff14;
+}
+
+.gym-map h3{
+    margin-bottom: 15px;
+}
+
+.subscription-details {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.subscription-details h3{
+    margin-bottom: 40px;
+}
+
+
+.subscription-details .info p {
+    color: #808080;
+}
+.subscription-details .info p:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+
+
+.gym-map{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.map iframe{
+    border-radius: 8px;
+    width: 100%;
+}
+
+
+
+footer {
+    padding: 20px 0;
+  }
+  
+  footer .top-footer,
+  footer .bottom-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  footer .top-footer {
+    margin-bottom: 30px;
+  }
+  
+  footer a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 11px;
+    transition: .3s;
+  }
+  
+  footer a:hover{
+    color: white;
+  }
+  
+  footer .top-footer .info a,
+  footer .bottom-footer .location a {
+    display: flex;
+    align-items: center;
+  }
+  
+  footer a i {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  
+  footer .top-footer .social-media a i {
+    font-size: 18px;
+  }
+  
+  footer .bottom-footer .terms-privace a {
+    text-transform: capitalize;
+  }
+  
+
+@media (max-width:800px) {
+      .subscription-details{
+        margin-bottom: 20px;
+        font-size: 1rem;
+      }
+      .gym-map{
+        font-size: 1rem;
+      }
+}
+

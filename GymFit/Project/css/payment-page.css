@@ -1,0 +1,159 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #000;
+    font-family: Arial, sans-serif;
+}
+
+.return-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: #32cd32;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.return-btn:hover {
+    background: #39ff14;
+}
+
+.return-btn i {
+    font-size: 22px;
+}
+
+.payment-card {
+    width: 450px;
+    padding: 20px;
+    background: #111;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment-card .header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.payment-card .header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.payment-card .header p {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input {
+    position: relative;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.input input {
+    width: 100%;
+    padding: 10px 5px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #39ff14;
+    outline: none;
+    color: white;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.input label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translate(0%, -50%);
+    margin-left: 10px;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+input:focus + label,
+input:not(:placeholder-shown) + label {
+    transform: translate(-10px, -25px) scale(0.8);
+}
+
+.input .card {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(0%, -20%);
+    margin-right: 10px;
+    font-size: 22px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+input:focus ~ .card {
+    color: #39ff14;
+    text-shadow: 0 0 8px #39ff14;
+}
+
+.expire-cvv {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.expire-cvv .input {
+    width: 48%;
+}
+
+.sub-btn ,.cancel-btn{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sub-btn button , .cancel-btn button{
+    width: 100%;
+    height: 40px;
+    background: #32cd32;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sub-btn button:hover {
+    background: #39ff14;
+}
+
+.cancel-btn button{
+    margin-top: 10px;
+    background: #ff00009d;
+}
+
+.cancel-btn button:hover{
+    background: #ff0000;
+}

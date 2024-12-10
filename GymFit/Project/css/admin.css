@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #111;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#user-management {
+  display: none;
+}
+
+.dashboard-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dashboard-tabs button, .addUser {
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #222;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.dashboard-tabs button.active-tab {
+  border-bottom: 3px solid #ffffff;
+}
+
+.dashboard-tabs button:hover {
+  background: #2222225a;
+}
+
+.dashboard-tabs .logout-btn:hover{
+  background: red;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-container input{
+  color: white;
+  background: #ffffff00;
+  border: 1px solid white;
+  outline: none;
+  border-radius: 4px;
+  width: 80%;
+  padding: 8px;
+  margin-bottom: 20px;
+  transition: .3s;
+}
+
+
+
+.dashboard-section {
+  padding: 20px;
+  border-top: 2px solid #333;
+}
+
+h2 {
+  color: #39ff14;
+  margin-bottom: 20px;
+}
+
+.dashboard-section .addUser {
+  border: 1px solid transparent;
+}
+
+.dashboard-section .del, .edit ,.confirm-edit {
+  background: #444;
+  cursor: pointer;
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.confirm-edit{
+  background: #0056b3;
+  border: none;
+}
+
+.edit{
+  background: red;
+}
+
+.edit:hover , .confirm-edit:hover {
+  background: #007bff;
+}
+
+.del:hover , .yes:hover{
+  background: #ff0000;
+}
+
+.addUser:hover {
+  background-color: #28a745;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #444;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #333;
+}
+
+td {
+  background-color: #222;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+
+  .dashboard-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .dashboard-tabs button, .addUser {
+    width: 90%;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  table, th, td {
+    padding: 6px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .dashboard-tabs button, .addUser {
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .dashboard-section {
+    padding: 15px;
+  }
+
+  table, th, td {
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.message {
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #e0ffe0; 
+  border: 1px solid #32cd32; 
+  color: #006600; 
+}
+
+.message.error {
+  background-color: #ffe0e0; 
+  border: 1px solid #ff4d4d; 
+  color: #cc0000; 
+}
+
+.actions-header {
+  width: 150px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-buttons .edit,
+.action-buttons .del {
+  display: inline-block;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.action-buttons .edit {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.action-buttons .edit:hover {
+  background-color: #0056b3;
+}
+
+.action-buttons .del {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.action-buttons .del:hover {
+  background-color: #c82333;
+}
+
+.action-buttons .confirm-btn {
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.action-buttons .yes-btn {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.action-buttons .yes-btn:hover {
+  background-color: #218838;
+}
+
+.action-buttons .no-btn {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.action-buttons .no-btn:hover {
+  background-color: #e0a800;
+}
+
+.actions-cell {
+  white-space: nowrap;
+  width: 150px;
+}

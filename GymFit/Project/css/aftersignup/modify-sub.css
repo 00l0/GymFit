@@ -1,0 +1,330 @@
+body {
+  padding: 0 8%;
+  overflow-x: hidden;
+}
+
+.fade1,
+.fade2,
+.fade3,
+.fade4 {
+  position: absolute;
+  border-radius: 50%;
+  background: #39ff14;
+  transform: translate(-50%, -50%);
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: -100;
+}
+
+.fade1 {
+  height: 250px;
+  width: 250px;
+  top: -100px;
+  left: -20px;
+}
+
+.fade2 {
+  height: 200px;
+  width: 200px;
+  top: 100px;
+  left: 325px;
+  display: none;
+}
+
+.fade3 {
+  height: 100px;
+  width: 100px;
+  top: 550px;
+  left: 30px;
+  background: #39ff14;
+  filter: blur(80px);
+}
+
+.fade4 {
+  height: 200px;
+  width: 200px;
+  top: 600px;
+  left: 125px;
+  background: #39ff14;
+  filter: blur(90px);
+  opacity: 0.3;
+}
+
+@media (max-width: 1024px) {
+  .fade1 {
+    height: 200px;
+    width: 200px;
+    top: -80px;
+    left: -10px;
+  }
+
+  .fade2 {
+    height: 180px;
+    width: 180px;
+    top: 120px;
+    left: 270px;
+  }
+
+  .fade3 {
+    height: 90px;
+    width: 90px;
+    top: 500px;
+    left: 40px;
+  }
+
+  .fade4 {
+    height: 180px;
+    width: 180px;
+    top: 550px;
+    left: 110px;
+  }
+}
+
+@media (max-width: 768px) {
+  .fade1 {
+    height: 180px;
+    width: 180px;
+    top: -60px;
+    left: -5px;
+  }
+
+  .fade2 {
+    height: 150px;
+    width: 150px;
+    top: 100px;
+    left: 230px;
+  }
+
+  .fade3 {
+    height: 80px;
+    width: 80px;
+    top: 400px;
+    left: 30px;
+  }
+
+  .fade4 {
+    height: 150px;
+    width: 150px;
+    top: 450px;
+    left: 90px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fade1 {
+    height: 150px;
+    width: 150px;
+    top: -40px;
+    left: 0px;
+  }
+
+  .fade2 {
+    height: 120px;
+    width: 120px;
+    top: 120px;
+    left: 180px;
+  }
+
+  .fade3 {
+    height: 70px;
+    width: 70px;
+    top: 350px;
+    left: 20px;
+  }
+
+  .fade4 {
+    height: 120px;
+    width: 120px;
+    top: 400px;
+    left: 70px;
+  }
+}
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+header .return-btn {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  background: #32cd32;
+  border-radius: 4px;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header .return-btn:hover {
+  background: #39ff14;
+}
+
+.return-btn i {
+  font-size: 22px;
+}
+
+.subscription-edit-section {
+  margin: 0 auto;
+  width: fit-content;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.subscription-edit-section h1 {
+  color: #fff;
+  margin: 10px 0;
+}
+
+.subscription-edit-section h2 {
+  font-size: 1rem;
+  color: #000;
+}
+
+.section-description {
+  font-size: 1rem;
+  color: #808080;
+  margin-bottom: 2rem;
+}
+
+.boxes {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.box {
+  background: #fff;
+  width: 300px;
+  max-width: 500px;
+  padding: 40px 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box .box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  position: relative;
+}
+
+.box .box-header::before {
+  content: "";
+  position: absolute;
+  height: 0.5px;
+  width: 100%;
+  background: #80808061;
+  bottom: 0;
+}
+
+.box-header h1,
+.box-header p {
+  color: black;
+  font-weight: bold;
+}
+
+.box-content .content-title {
+  padding: 10px 0;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.563);
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.box-content .content-features {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.box-content .content-features a {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+}
+
+.content-features a i {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.BoxJoinNow-btn {
+  background: #32cd32;
+  width: 100%;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 25px 0;
+  transition: 0.3s;
+}
+
+.BoxJoinNow-btn:hover {
+  background-color: #39ff14;
+}
+
+
+@media (max-width: 768px) {
+  .boxes {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscription-edit-section h1 {
+    font-size: 24px;
+  }
+  .subscription-edit-section p {
+    font-size: 12px;
+  }
+
+  .box {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .box-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .box-header p {
+    font-size: 1rem;
+  }
+
+  .BoxJoinNow-btn {
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+}

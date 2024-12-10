@@ -1,0 +1,164 @@
+
+body{
+    padding: 0 8%;
+}
+
+.fade1,
+.fade2,
+.fade3,
+.fade4 {
+  position: absolute;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background: #39ff14;
+  top: -100px;
+  left: -20px;
+  transform: translate(-50% , -50%);
+  filter: blur(100px);
+  opacity: 0.5;
+  z-index: -100;
+}
+
+.fade2 {
+  top: 100px;
+  left: 825px;
+  height: 200px;
+  width: 200px;
+}
+.fade3 {
+  top: 550px;
+  left: 30px;
+  height: 100px;
+  width: 100px;
+  background: #39ff14;
+  filter: blur(80px);
+}
+
+.fade4 {
+  top: 600px;
+  left: 925px;
+  height: 200px;
+  width: 200px;
+  background: #39ff14;
+  filter: blur(90px);
+  opacity: 0.3;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+header{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+header .return-btn{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    background: #32cd32;
+    border-radius: 4px;
+    color: #fff;
+    padding: 10px 40px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+header .return-btn:hover{
+    background: #39ff14;
+}
+
+.return-btn i {
+    font-size: 22px;
+}
+
+.main-content {
+    padding: 2rem 0;
+}
+
+.personal-info-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    text-align: center;
+}
+
+.personal-info-section h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: #39ff14;
+}
+
+.personal-info-card {
+    border: 1px solid gray;
+    padding: 0 10px;
+    border-radius: 4px;
+    margin: 0 auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.info-row:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: 500;
+    color: #808080;
+}
+
+.info-value {
+    font-weight: 400;
+    color: #fff;
+}
+
+.edit-button {
+    margin-top: 2rem;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    background: #32cd32;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background: #39ff14;
+}
+
+
+
+@media (max-width: 768px) {
+    .personal-info-section h2{
+        font-size: 18px;
+    }
+
+    .personal-info-card {
+        max-width: 100%;
+    }
+
+    .personal-info-card span , .personal-info-section .edit-button{
+        font-size: 13px;
+    }
+
+    
+}

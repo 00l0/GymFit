@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.edit-member-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #111;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.error-messages {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.error-messages ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.error-messages li {
+  margin-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+form input, form select, form button {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+}
+
+form input:disabled {
+  background-color: #444;
+}
+
+form button {
+  background-color: #32cd32;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #39ff14;
+}
+
+form button[type="button"] {
+  background-color: #dc3545;
+  margin-top: 10px;
+}
+
+form button[type="button"]:hover {
+  background-color: #c82333;
+}
+
+
+@media (max-width: 768px) {
+  .edit-member-container {
+    padding: 15px;
+  }
+
+  form input, form select, form button {
+    font-size: 16px;
+  }
+
+  form button {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+  }
+
+  form label {
+    font-size: 12px;
+  }
+
+  form input, form select, form button {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
+
+.message {
+  padding: 10px;
+  margin: 20px 0;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message.success {
+  background-color: #e0ffe0;
+  border: 1px solid #32cd32; 
+  color: #006600; 
+}
+
+.message.error {
+  background-color: #ffe0e0; 
+  border: 1px solid #ff4d4d;
+  color: #cc0000;
+}

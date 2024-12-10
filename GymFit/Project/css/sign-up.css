@@ -1,0 +1,172 @@
+.signup-form,
+.login-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.95);
+  width: 350px;
+  background: #111;
+  border-radius: 8px;
+  border: 3px solid #ffffffbf;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.signup-form.show,
+.login-form.show {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.signup-form i.bx-x,
+.login-form i.bx-x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.signup-form h1,
+.login-form h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #2a2a2a;
+  background: transparent;
+  color: white;
+  outline: none;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  color: gray;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label {
+  transform: translate(-7px , -17px);
+  font-size: 12px;
+  color: #39ff14;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: #32cd32;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: .3s;
+}
+
+.submit-btn:hover {
+  background: #39ff14;
+  
+}
+
+.signup-form p,
+.login-form p {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+.signup-form p a,
+.login-form p a {
+  color: #39ff14;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.terms {
+  font-size: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+
+.terms input {
+  margin-right: 5px;
+}
+
+.terms a {
+  color: #39ff14;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
+
+.show-login-form:hover,.show-signup-form:hover{
+  text-decoration: underline;
+}
+
+.show-signup-form ,.show-login-form{
+  color: #39ff14;
+  cursor: pointer;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.login-options span {
+  color: white;
+}
+
+.login-options a {
+  color: #39ff14;
+  text-decoration: none;
+}
+
+.login-options a:hover {
+  text-decoration: underline;
+}
+
+.remember-me{
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.remember-me span{
+  margin-left: 10px;
+}
+
+form .haveAacc{
+  margin-top: 20px;
+}
